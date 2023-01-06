@@ -8,20 +8,20 @@
 <link rel="canonical" href="https://tgwl.github.io/2023/health/">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
-<meta name="description" content="健康核酸码生成 之前没事干看健康码前端发现的，现在疫情放开遂发出来 流程 很久之前了，就不发找密钥的步骤了大致就是找前端文件，找到前端加密的库以及密钥然后我们同样使用该库加密，然后抓接口，进行提交即可生成，其中核酸码较为复杂需要将加密提交后返回的参数转为二维码即可。 可以干什么？ 可以做成健康码核酸码聚合app给老年人使用，也可以使用python编写一个小程序调用接口查询指定Excel表格内的人员">
+<meta name="description" content="⚠️⚠️⚠️ 声明：本文内容仅限技术交流，若有用作商业或其他违规行为，与本人无关。">
 <meta property="og:type" content="website">
 <meta property="og:title" content="健康核酸码生成">
 <meta property="og:url" content="https://tgwl.github.io/2023/health/index.html">
 <meta property="og:site_name" content="Zezin&#39;s Blog">
-<meta property="og:description" content="健康核酸码生成 之前没事干看健康码前端发现的，现在疫情放开遂发出来 流程 很久之前了，就不发找密钥的步骤了大致就是找前端文件，找到前端加密的库以及密钥然后我们同样使用该库加密，然后抓接口，进行提交即可生成，其中核酸码较为复杂需要将加密提交后返回的参数转为二维码即可。 可以干什么？ 可以做成健康码核酸码聚合app给老年人使用，也可以使用python编写一个小程序调用接口查询指定Excel表格内的人员">
+<meta property="og:description" content="⚠️⚠️⚠️ 声明：本文内容仅限技术交流，若有用作商业或其他违规行为，与本人无关。">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://tgwl.github.io/2023/health/2023/health/cover.png">
 <meta property="article:published_time" content="2023-01-03T21:28:00.000Z">
-<meta property="article:modified_time" content="2023-01-03T21:34:28.881Z">
+<meta property="article:modified_time" content="2023-01-06T07:48:16.865Z">
 <meta property="article:author" content="Zezin">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://tgwl.github.io/2023/health/2023/health/cover.png">
-<script type="application/ld+json">[{"@context":"http://schema.org","@type":"WebSite","publisher":{"@type":"Person","name":"Zezin","description":"晒饱太阳，远道而来。","image":"https://tgwl.github.io/avatar.jpg"},"url":"https://tgwl.github.io","image":"https://tgwl.github.io/avatar.jpg","description":"🙈🙉🙊","author":{"@type":"Person","name":"Zezin","description":"晒饱太阳，远道而来。","image":"https://tgwl.github.io/avatar.jpg"},"inLanguage":{"@type":"Language","alternateName":"en"}},{"@context":"http://schema.org","@type":"Article","articleSection":"technology","url":"https://tgwl.github.io/2023/health/","headline":"健康核酸码生成","image":"2023/health/cover.png","datePublished":"2023-01-03T21:28:00.000Z","dateModified":"2023-01-03T21:34:28.881Z","keywords":"","description":"🙈🙉🙊","publisher":{"@type":"Organization","name":"Zezin's Blog","logo":{"@type":"ImageObject","url":"https://tgwl.github.io/avatar.jpg"}},"author":{"@type":"Person","name":"Zezin","description":"晒饱太阳，远道而来。","image":"https://tgwl.github.io/avatar.jpg"},"inLanguage":{"@type":"Language","alternateName":"en"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tgwl.github.io/2023/health/"},"thumbnailUrl":"2023/health/cover.png"}]</script>
+<script type="application/ld+json">[{"@context":"http://schema.org","@type":"WebSite","publisher":{"@type":"Person","name":"Zezin","description":"晒饱太阳，远道而来。","image":"https://tgwl.github.io/avatar.jpg"},"url":"https://tgwl.github.io","image":"https://tgwl.github.io/avatar.jpg","description":"🙈🙉🙊","author":{"@type":"Person","name":"Zezin","description":"晒饱太阳，远道而来。","image":"https://tgwl.github.io/avatar.jpg"},"inLanguage":{"@type":"Language","alternateName":"en"}},{"@context":"http://schema.org","@type":"Article","articleSection":"technology","url":"https://tgwl.github.io/2023/health/","headline":"健康核酸码生成","image":"2023/health/cover.png","datePublished":"2023-01-03T21:28:00.000Z","dateModified":"2023-01-06T07:48:16.865Z","keywords":"","description":"\n⚠️⚠️⚠️ 声明：本文内容仅限技术交流，若有用作商业或其他违规行为，与本人无关。\n","publisher":{"@type":"Organization","name":"Zezin's Blog","logo":{"@type":"ImageObject","url":"https://tgwl.github.io/avatar.jpg"}},"author":{"@type":"Person","name":"Zezin","description":"晒饱太阳，远道而来。","image":"https://tgwl.github.io/avatar.jpg"},"inLanguage":{"@type":"Language","alternateName":"en"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tgwl.github.io/2023/health/"},"thumbnailUrl":"2023/health/cover.png"}]</script>
 
 <!-- hexo injector head_end start --><link href="//cdn.jsdelivr.net/gh/fiteen/fiteen.github.io@v0.1.0/font.css" rel="stylesheet"><link href="/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet"><style>@media screen and (min-width:500px) {
   .φcu {
@@ -44,7 +44,7 @@
   }
 }
 </style><link href="/styles.43478ea7e28ed563c48b.css" rel="stylesheet">
-<script src="/config.44894ea1c82eccbe6093.js"></script>
+<script src="/config.73068069bb2b3227a00c.js"></script>
 
 <link rel="stylesheet" href="/theme.de4fcdcb477f8cb70905.css" is="theme">
 <!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head>

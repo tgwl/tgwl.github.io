@@ -19,18 +19,6 @@ copyright: false
 
 
 
-<div class="friends">
-    <a class="brick mdui-ripple mdui-ripple-white" href="https://laiwenbo.icu/">
-        <div class="container">
-            <div class="name">赖文搏的博客</div>
-            <div class="motto">个人小站</div>
-        </div>
-    </a>    
-</div>
-
-    
-</div>
-
 <style>
 .friends{display:flex;flex-wrap:wrap;}.friends .brick{-webkit-transition:all .3s ease;transition:all .3s ease;}.friends .brick{display:flex;margin:10px 10px 0 0;text-decoration:none;font-weight:300;padding:10px;background-color:#fff0;border:solid 1px #659eb929;color:#659eb9;text-align:center;border-radius:4px;overflow:hidden}.friends .brick:hover{background-color:#659eb9;color:#fff;border:solid 1px #659eb9;box-shadow:0 6px 16px 0 rgba(80, 178, 243, 0.35);}.blog-avatar:hover{animation:whirl 0.5s;}
 @keyframes whirl{0%{transform:rotate(0deg);}100%{transform:rotate(360deg);}}.friends .brick:active{-webkit-transform:scale(0.95);-moz-transform:scale(0.95);-ms-transform:scale(0.95);-o-transform:scale(0.95);transform:scale(0.95);}.friends .brick .blog-avatar{background-color:#fff0;color:#fff;border:solid 1px #dbdbdb;border-radius:50%;width:50px;height:50px;}.friends .brick .container{margin-left:10px;}.friends .brick .container .name{font-size:14px;}.friends .brick .container .motto{font-size:12px;margin-top:5px;-webkit-box-orient:vertical;-webkit-line-clamp:1;}
